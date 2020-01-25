@@ -5,10 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tianhui Yang</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
 </head>
 <body>
 
@@ -19,7 +46,7 @@
             </p>
         </div>
         <nav>
-            <a href="index.html">ABOUT ME</a>
+            <a href="#section">ABOUT ME</a>
             <a href="progress.html" target= "_blank">MY EXPERIENCES</a>
             <a href="progress.html" target= "_blank">MY PROJECTS</a>
             <!-- <a href="/resume/TianhuiY-Dev.pdf" target= "_blank">RESUME</a> -->
@@ -36,7 +63,7 @@
         <div>
             <img src="images/arrow.png" alt="arrow" id="arrow">
         </div>
-        <section>
+        <section id= "section">
             <h1>Tech Enthusiast - Challenge Seeker - Curious Learner</h1>
             <h2>Hey there! Nice to meet you.</h2>
             <p>I'm Tianhui (tian-hway), a first year Computer Science Student at the University of Waterloo. Throughout high school I was a huge business junkie and recently developed a love for technology. As someone who is continuously learning about the world of coding, I am always looking for opportunities to build upon my technical skills.</p>
