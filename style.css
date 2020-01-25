@@ -55,6 +55,7 @@ main {
 
 main p {
     font-size: 2vw;
+    text-align: center;
 }
 
 #arrow {
