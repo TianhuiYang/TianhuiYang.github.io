@@ -14,18 +14,34 @@ h1 {
 h2 {
     font-weight: 300;
     line-height: 150%;
+    font-size: 200%;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 h3 {
     font-weight: 300;
     font-size: 150%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    line-height: 150%;
 }
 
 #intro {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 10%;
-    
+    height: 100vh;
+}
+
+#intro h2 {
+    padding-left: 40px;
+}
+
+#intro a {
+    font-size: 125%;
+    color: white;
+}
+
+#about {
+    height: 100vh;
+
 }
