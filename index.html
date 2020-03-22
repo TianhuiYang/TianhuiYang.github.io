@@ -1,103 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tianhui Yang</title>
+    <title>Tianhui | CompSci</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700|Overpass|Raleway:400,700|Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-    
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-    
-          var hash = this.hash;
-    
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-       
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="new.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="myscripts.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
     </script>
 </head>
+
 <body>
 
-    <header>
-        <div>
-            <p style="float: left;">
-                <a href="index.html">TY</a>
-            </p>
-        </div>
-        <nav>
-            <a href="#about">ABOUT ME</a>
-            <a href="progress.html" target= "_blank">MY EXPERIENCES</a>
-            <a href="progress.html" target= "_blank">MY PROJECTS</a>
-            <!-- <a href="/resume/TianhuiY-Dev.pdf" target= "_blank">RESUME</a> -->
-        </nav>
-    </header>
-
-    <main>
-        <p>TIANHUI</p>
-
-        <div>
-            <p style="float:center;">
-                <img src="images/Website-Photo-2.jpg" alt="Photo of me" id= "profile">
-            </p>
-        </div>
-        
-        <div>
-            <a href="#about"><img src="images/arrow.png" alt="arrow" id="arrow"></a>
-        </div>
-        <section id= "about">
-            <h1>Tech Enthusiast - Challenge Seeker - Curious Learner</h1>
-            <h2>Hey there! Nice to meet you.</h2>
-            <p>I'm Tianhui (tian-hway), a first year Computer Science Student at the University of Waterloo. Throughout high school I was a huge business junkie and recently developed a love for technology. As someone who is continuously learning about the world of coding, I am always looking for opportunities to build upon my technical skills.</p>
-            <p>When I'm not busy doing assignments or coding, I love playing piano and learning new pieces. I also value the importance of maintaining a healthy lifestyle and enjoy going to the gym, playing volleyball with friends and running fun ping pong matches. I am also really interested in fashion and have an admiration for the talented beauty community.</p>
-            <h1>This website is a work in progress. Please visit again for more updates :)</h1>
-            <!--<h1>Feel free to explore my website to learn more about my past experiences and pstt... stay tuned for new projects in the future. :)</h1> -->
-        </section>
-    </main>
-
-    
-    <footer>
-        <div>
-            <h2>Let's get in touch!</h2>
-            <p>I love meeting new people and am always open to new learning opportunities. My resume can be sent upon request.</p>
-            <p>Feel free to reach out :)</p>
+    <div id="intro">
+        <!-- <div class="row"> -->
+        <h1>Hey, I'm Tianhui!</h1>
+        <h3>Welcome to my website.</h3>
+        <h2>💻 B. Computer Science
+            <br>🏫 University of Waterloo
+            <br>🗺️ Milton, ON
+        </h2>
+        <!-- <h3>Click any of the following to learn more about me and my work: </h3> -->
+        <div class="row">
+            <div class="col-md-2">
+                <a href="#about">About Me</a>
+            </div>
+            <div class="col-md-2">
+                <a href="#projects">Projects</a>
+            </div>
+            <div class="col-md-3">
+                <a href="#experience" target="_blank">My Experiences</a>
+            </div>
+            <!--    </div> -->
         </div>
 
-        <p style="float: left;">
-        <a href="https://www.linkedin.com/in/tianhuiy/" target= "_blank">
-        <img src="images/linkedin-icon.png" alt="LinkedIn" id="LinkedIn"></a>
-        </p>
-        <p style= "float: left;">
-        <a href="https://github.com/tianhuiyang" target= "_blank">
-        <img src="images/github.png" alt="Github" id="Github"></a>
-        </p>
-        <p style= "float: left;">
-        <a href="mailto:t225yang@edu.waterloo.ca" target= "_blank">
-        <img src="images/mail.png" alt="Github" id="Email"></a>
-        </p>
+    </div>
 
-    </footer>  
+    <div id="about">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="images/Website-Photo-2.jpg" class="img-fluid" alt="" id="profile">
+            </div>
+            <div class="col-md-7">
+                <h1>👩‍💻 About Me</h1>
+                <p>My name is Tianhui, pronounced "tian-hway" and I am a Computer Science student who is passionate
+                    about learning innovative technologies to make cool projects that will (hopefully) impact the world
+                    in the
+                    future.</p>
+                <p>When I'm not coding or completing coursework, I enjoy running, playing volleyball with friends,
+                    learning new recipes and playing pieces on the piano. Fun fact: I used to teach piano!<br>I am also
+                    very interested in learning about fashion trends and discovering creative ways to style simple
+                    clothing items.</p>
+                <p>In addition to my coding experience, I have an extensive leadership background. Keep scrolling to
+                    learn more about my experiences. Feel free to also connect with me on LinkedIn!</p>
+            </div>
+        </div>
+    </div>
 
-    
+    <div id="projects">
+        <h1>⚙️ My Projects</h1>
+        <h3>As I continuously develop my technical skills, I am always looking for learning opportunities. These are
+            some projects I have created at Hackathons.</h3>
+        <div class="row" id="ShotSpot">
+            <div class="col-md-6">
+                <img src="images/ShotSpot.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+                <p>ShotSpot is the first Instagram-based application that provides users with the best photography
+                    hotpots. The web app is build on Node.js and interfaces with the Google Maps API to deliver
+                    real-time top IG posts in the searched city.</p>
+                <p>💻: BeautifulSoup4, Python, Express.js, HTML5/CSS3/JS, JSON, Node.js, Google Maps API</p>
+                <p>🏆: Best Use of AWS, Most Promising, Best Domain</p>
+                <a class="btn btn-outline-primary btn-sm"
+                    href="https://www.youtube.com/watch?v=n2XzGo7rgMs&feature=emb_title" target="_blank">Demo</a>
+                <a class="btn btn-outline-primary btn-sm" href="http://www.shotspot.org/" target="_blank">Site</a>
+                <a class="btn btn-outline-primary btn-sm" href="https://devpost.com/software/shotspot"
+                    target="_blank">Devpost</a>
+
+            </div>
+        </div>
+
+        <div class="row" id="CalorEats">
+            <div class="col-md-6">
+                <img src="images/CalorEats.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+                <p>CalorEats is an Android calorie tracker that uses Computer Vision. Simply capture an image of your
+                    food item and the app will use the Nutritionix API to track the calorie and nutritional value of the
+                    product. Forgot to take an image of your food item before you ate it? No worries, users can also
+                    search their food item.</p>
+                <p>💻: Google Vision API, Framework7 (HTML5/CSS3/JS), firebase, jQuery, Node.js, Nutrionix API</p>
+                <a class="btn btn-outline-primary btn-sm" href="https://devpost.com/software/caloreats"
+                    target="_blank">Devpost</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience">
+        <h1>💼 My Experiences</h1>
+        <h3>As a hands-on learner, I have always tried to be involved in my school and community. This has led to
+            amazing leadership opportunities, enabling me to grow interpersonally and professionally.</h3>
+
+        <div class="row" id="row1">
+            <div class="col-md-4">
+                <a class="btn btn-outline-primary btn-sm" href="https://www.illuminateuniverse.com/"
+                    target="_blank">Illuminate Universe</a>
+                <p>👩🏻 Senior National Lead</p>
+                <p>Illuminate Universe prepares students for today's workforce through the annual National High School
+                    Business Conference (NHBC)</p>
+                <p>📍 NHBC — Toronto, ON</p>
+                <img src="images/NHBC.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-outline-primary btn-sm" href="https://deca.ca/" target="_blank">WOSS DECA</a>
+                <p>👩🏻 President</p>
+                <p>While presiding, WOSS DECA achieved 116 provincial medals, was named the top 5th chapter in Ontario
+                    and the largest chapter with 308 members.</p>
+                <p>📍 ICDC — Atlanta, GA</p>
+                <img src="images/ICDC-2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-outline-primary btn-sm" href="https://linkedkey.com/debate-for-excellence/"
+                    target="_blank">LinkedKey Debate</a>
+                <p>👩🏻 Debate Camp TA</p>
+                <p>LinkedKey has historically produced International and National debate champions at all levels. As TA,
+                    I led workshops and judged mock debates.</p>
+                <p>📍 LinkedKey Class — Mississauga, ON</p>
+                <img src="images/LinkedKey.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+
+        <div class="row" id="row2">
+            <div class="col-md-4">
+                <a class="btn btn-outline-primary btn-sm" href="https://www.facebook.com/whiteoaksdebate"
+                    target="_blank">WOSS Debate</a>
+                <p>👩🏻 Training Executive</p>
+                <p>WOSS Debate is nationally renowned for its winning culture. I led 3-hour weekly practices by creating
+                    motions and argument construction lessons.</p>
+                <p>📍 Harvard College — Cambridge, MA</p>
+                <img src="images/Harvard.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-outline-primary btn-sm" href="https://www.instagram.com/wosswildcats/"
+                    target="_blank">Student Government</a>
+                <p>👩🏻 Senior Social Director</p>
+                <p>Being apart of the studgov family was one of my most memorable experiences as a hs student. I led all
+                    social events and managed the Instagram account.</p>
+                <p>📍 Team Bonding — Oakville, ON</p>
+                <img src="images/StudGov.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-outline-primary btn-sm" href="https://www.medlifemovement.org/"
+                    target="_blank">MedLife</a>
+                <p>👩🏻 Pharmacist, Dental Assistant</p>
+                <p>MedLife's service trip was a very eye-opening and fulfilling experience, allowing me to learn about
+                    the medical industry while helping others.</p>
+                <p>📍 MedLife Clinic — MiraFlores, Peru</p>
+                <img src="images/MedLife.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+
+        <h3>As a growing student, I look forward to the new learning opportunities to come.</h3>
+        <h3>Interested in connecting? You can reach me on the following platforms:</h3>
+        <div class="row" id="row3">
+            <div class="col-md-4">
+                <a class="btn btn-outline-primary btn-sm" href="mailto:t225yang@uwaterloo.ca" target="_blank">Mail</a>
+                <a class="btn btn-outline-primary btn-sm" href="https://www.linkedin.com/in/tianhuiyang/"
+                    target="_blank">LinkedIn</a>
+                <a class="btn btn-outline-primary btn-sm" href="https://github.com/tianhuiyang"
+                    target="_blank">Github</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Coded from scratch by Tianhui using HTML5/CSS3, JS, Bootstrap. 2020.</p>
+    </div>
+
+
 </body>
 
 </html>
