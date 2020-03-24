@@ -1,14 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(6, 20, 36);
+    background-color: rgb(30, 34, 41);
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 h1 {
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 175%;
     padding-top: 4%;
 }
 
@@ -22,13 +24,13 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-size: 120%;
+    font-size: 3vh;
     line-height: 130%;
 }
 
 a {
     font-weight: 600;
-    color: rgb(153, 226, 255);
+    color: rgb(180, 211, 252);
 }
 
 
@@ -40,8 +42,6 @@ p {
 }
 
 #intro {
-    margin-left: 20%;
-    margin-right: 20%;
     margin-top: 10%;
     margin-bottom: 5%;
     height: 100%;
@@ -56,16 +56,18 @@ p {
 }
 
 #intro a {
-    font-size: 125%;
     color: white;
 }
 
 #about {
-    margin-left: 15%;
-    margin-right: 15%;
     margin-bottom: 10%;
-    padding-top: 6%;
+    padding-top: 8%;
     height: 100%;
+}
+ 
+ 
+#about h1 {
+    font-size: 150%;
 }
 
 #about p {
@@ -78,23 +80,17 @@ p {
     margin-right: auto;
     margin-top: 10%;
     margin-bottom: 10%;
-    width: 40vw;
+    width: 55vw;
     border-radius: 50%;
     filter: brightness(105%);
 
 }
 
-#image {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-} 
-
 #projects {
     padding-top: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
     margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     height: 100%;
 }
 
@@ -112,8 +108,9 @@ p {
 
 #experience {
     height: 100%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1%;
 }
 
 #experience p {
@@ -123,7 +120,7 @@ p {
 }
 
 #btn1 {
-    margin-top: 12%;
+    margin-top: 10%;
 }
 
 #row2 {
@@ -136,7 +133,7 @@ p {
     margin-bottom: 5%;
 }
 
-h3 {
-    font-size: 3.1vh;
+#btn2 {
+    margin: 0 auto;
 }
 
