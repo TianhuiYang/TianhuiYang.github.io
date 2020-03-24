@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(30, 34, 41);
+    background-color: rgb(25, 29, 36);
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     margin-left: 15%;
@@ -16,10 +16,10 @@ h1 {
 
 h2 {
     font-weight: 300;
-    line-height: 150%;
-    font-size: 2.5vw;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    line-height: 175%;
+    font-size: 150%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 h3 {
@@ -47,21 +47,24 @@ p {
 }
 
 #intro {
-    margin-top: 10%;
-    margin-bottom: 5%;
+    margin-top: 14%;
+    margin-bottom: 4%;
     height: 100%;
 }
 
 #intro h1 {
-    font-size: 5vw;
+    font-size: 320%;
 }
 
-#intro h2 {
-    padding-left: 40px;
+#summary {
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 5%;
 }
 
 #intro a {
     color: white;
+    font-size: 150%;
 }
 
 #about {
