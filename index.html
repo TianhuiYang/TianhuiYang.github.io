@@ -8,11 +8,11 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <meta property="og:image" content="images/thumbnail.jpg">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
@@ -48,6 +48,17 @@
 
 <body>
 
+    <!--
+    <div>
+        <button onclick="myFunction()">Toggle dark mode</button>
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+    </div> -->
+
     <div id="intro">
         <!-- <div class="row"> -->
         <h1 class="typewriter hvr-bob">Hey, I'm Tianhui!</h1>
@@ -56,7 +67,13 @@
             <br>🏫 University of Waterloo
             <br>🗺️ Milton, ON
         </h2>
-        <!-- <h3>Click any of the following to learn more about me and my work: </h3> -->
+
+        <h3>Keep scrolling to learn more about me and my work!</h3>
+        <a href="#about">
+            <i class='fas fa-angle-double-down hvr-bob' style='font-size:20px'></i>
+        </a>
+
+        <!--
         <div class="row">
             <div class="col-md-2">
                 <a href="#about" class="hvr-float">About Me</a>
@@ -67,8 +84,9 @@
             <div class="col-md-3">
                 <a href="#experience" class="hvr-float">My Experiences</a>
             </div>
-            <!--    </div> -->
+       
         </div>
+         -->
 
     </div>
 
@@ -79,11 +97,10 @@
             </div>
             <div class="col-md-7">
                 <h1>👩‍💻 About Me</h1>
-                <p>My name is Tianhui, pronounced "tee-an-hway" and I am a Computer Science student at uWaterloo who is passionate
-                    about learning innovative technologies to make cool <a href="#projects">projects</a> that will
-                    (hopefully) impact the world
-                    in the
-                    future.</p>
+                <p>My name is Tianhui, pronounced "tee-an-hway" and I am a Computer Science student at uWaterloo who is
+                    passionate
+                    about learning innovative technologies to make cool <a href="#projects">projects</a> that can
+                    (hopefully) impact the world.</p>
                 <p>When I'm not coding or completing coursework, I enjoy running, playing volleyball with friends,
                     learning new recipes and playing pieces on the piano. Fun fact: I used to teach piano! I am also
                     very interested in learning about fashion trends and discovering creative ways to style simple
@@ -102,7 +119,8 @@
         <div id="showcase">
             <div class="row" id="ShotSpot">
                 <div class="col-md-6">
-                    <a href="https://devpost.com/software/caloreats" target="_blank"><img src="images/ShotSpot.jpg" class="img-fluid hvr-glow" alt=""></a>
+                    <a href="https://devpost.com/software/caloreats" target="_blank"><img src="images/ShotSpot.jpg"
+                            class="img-fluid hvr-glow" alt=""></a>
                 </div>
                 <div class="col-md-6">
                     <p>ShotSpot is the first Instagram-based application that provides users with the best photography
@@ -121,7 +139,8 @@
 
             <div class="row" id="CalorEats">
                 <div class="col-md-6">
-                    <a href="https://devpost.com/software/caloreats" target="_blank"><img src="images/CalorEats.png" class="img-fluid hvr-glow" alt=""></a>
+                    <a href="https://devpost.com/software/caloreats" target="_blank"><img src="images/CalorEats.png"
+                            class="img-fluid hvr-glow" alt=""></a>
                 </div>
                 <div class="col-md-6">
                     <p>CalorEats is an Android calorie tracker that uses Computer Vision. Simply capture an image of
@@ -146,13 +165,14 @@
 
         <div class="row" id="row1">
             <div class="col-md-4 hvr-glow">
-                <a class="btn btn-outline-primary btn-sm" href="https://www.illuminateuniverse.com/" target="_blank"
-                    >Illuminate Universe</a>
+                <a class="btn btn-outline-primary btn-sm" href="https://www.illuminateuniverse.com/"
+                    target="_blank">Illuminate Universe</a>
                 <p>👩‍💼 Senior National Lead</p>
                 <p>Illuminate prepares students for today's workforce through the annual National High School
                     Business Conference (NHBC) in partnership with Deloitte, WiLA, CPA.</p>
                 <p>📍 NHBC — Toronto, ON</p>
-                <a href="https://www.illuminateuniverse.com/" target="_blank"><img src="images/NHBC.jpg" class="img-fluid"></a>
+                <a href="https://www.illuminateuniverse.com/" target="_blank"><img src="images/NHBC.jpg"
+                        class="img-fluid"></a>
             </div>
             <div class="col-md-4 hvr-glow">
                 <a class="btn btn-outline-primary btn-sm" href="https://deca.ca/" target="_blank">WOSS
@@ -170,7 +190,8 @@
                 <p>LinkedKey has historically produced International and National debate champions at all levels. As TA,
                     I led workshops and judged mock debates.</p>
                 <p>📍 LinkedKey Class — Mississauga, ON</p>
-                <a href="https://linkedkey.com/debate-for-excellence/" target="_blank"><img src="images/LinkedKey.jpg" class="img-fluid" alt=""></a>
+                <a href="https://linkedkey.com/debate-for-excellence/" target="_blank"><img src="images/LinkedKey.jpg"
+                        class="img-fluid" alt=""></a>
             </div>
         </div>
 
@@ -182,24 +203,28 @@
                 <p>WOSS Debate is nationally renowned for its winning culture. I led 3-hour weekly practices by creating
                     motions and argument construction lessons.</p>
                 <p>📍 Harvard College — Cambridge, MA</p>
-                <a href="https://www.facebook.com/whiteoaksdebate" target="_blank"><img src="images/Harvard.jpg" class="img-fluid"></a>
+                <a href="https://www.facebook.com/whiteoaksdebate" target="_blank"><img src="images/Harvard.jpg"
+                        class="img-fluid"></a>
             </div>
             <div class="col-md-4 hvr-glow">
-                <a class="btn btn-outline-primary btn-sm" href="https://www.instagram.com/wosswildcats/" target="_blank">Student Government</a>
+                <a class="btn btn-outline-primary btn-sm" href="https://www.instagram.com/wosswildcats/"
+                    target="_blank">Student Government</a>
                 <p>👩‍💼 Senior Social Director</p>
                 <p>Being apart of the studgov family was one of my most memorable experiences as a hs student. I led all
                     social events and managed the Instagram account.</p>
                 <p>📍 Team Bonding — Oakville, ON</p>
-                <a href="https://www.instagram.com/wosswildcats/" target="_blank"><img src="images/StudGov.jpg" class="img-fluid" alt=""></a>
+                <a href="https://www.instagram.com/wosswildcats/" target="_blank"><img src="images/StudGov.jpg"
+                        class="img-fluid" alt=""></a>
             </div>
             <div class="col-md-4 hvr-glow">
-                <a class="btn btn-outline-primary btn-sm" href="https://www.medlifemovement.org/" target="_blank"
-                    >MedLife</a>
+                <a class="btn btn-outline-primary btn-sm" href="https://www.medlifemovement.org/"
+                    target="_blank">MedLife</a>
                 <p>👩‍💼 Pharmacist, Dental Assistant</p>
                 <p>MedLife's service trip was a very eye-opening and fulfilling experience, allowing me to learn about
                     the medical industry while helping others.</p>
                 <p>📍 MedLife Clinic — MiraFlores, Peru</p>
-                <a href="https://www.medlifemovement.org/" target="_blank"><img src="images/MedLife.jpg" class="img-fluid" alt=""></a>
+                <a href="https://www.medlifemovement.org/" target="_blank"><img src="images/MedLife.jpg"
+                        class="img-fluid" alt=""></a>
             </div>
         </div>
 
@@ -219,14 +244,15 @@
     </div>
 
     <div id="footer">
-        <p> Developed from scratch by Tianhui using HTML5/CSS3, JS/jQuery, Bootstrap. <br>Last updated: March 2020.</p>
+        <p> Developed from scratch by Tianhui. <br>Last updated: March 2020.</p>
         <div class="row">
             <div class="col-md-4 btn-center">
                 <a class="btn btn-outline-primary btn-sm hvr-glow" href="mailto:t225yang@uwaterloo.ca" target="_blank"
                     id="btn2">Email</a>
                 <a class="btn btn-outline-primary btn-sm hvr-glow" href="https://www.linkedin.com/in/tianhuiyang/"
                     target="_blank">LinkedIn</a>
-                <a class="btn btn-outline-primary btn-sm hvr-glow" href="https://github.com/tianhuiyang" target="_blank">Github</a>
+                <a class="btn btn-outline-primary btn-sm hvr-glow" href="https://github.com/tianhuiyang"
+                    target="_blank">Github</a>
             </div>
         </div>
     </div>
