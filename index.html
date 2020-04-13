@@ -14,6 +14,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
@@ -49,15 +50,18 @@
 <body>
 
     <!--
-    <div>
-        <button onclick="myFunction()">Toggle dark mode</button>
-        <script>
-            function myFunction() {
-                var element = document.body;
-                element.classList.toggle("dark-mode");
-            }
-        </script>
-    </div> -->
+    <div class="row">
+        <div class="col-md-6">
+            <button onclick="myFunction()" class = "button night-mode-btn"></button>
+            <script>
+                function myFunction() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+            </script>
+        </div>
+    </div>
+    -->
 
     <div id="intro">
         <!-- <div class="row"> -->
@@ -70,7 +74,7 @@
 
         <h3>Keep scrolling to learn more about me and my work!</h3>
         <a href="#about">
-            <i class='fas fa-angle-double-down hvr-bob' style='font-size:20px'></i>
+            <i class='fas fa-angle-double-down arrow bounce-1' style='font-size:20px'></i>
         </a>
 
         <!--
@@ -93,7 +97,7 @@
     <div id="about">
         <div class="row">
             <div class="col-md-5" id="image">
-                <img src="images/Website-Photo-2.jpg" class="img-fluid" alt="" id="profile">
+                <img src="images/Website-Photo-2.jpg" class="img-fluid hvr-glow" alt="" id="profile">
             </div>
             <div class="col-md-7">
                 <h1>👩‍💻 About Me</h1>
