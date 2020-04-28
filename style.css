@@ -61,7 +61,7 @@ a:hover {
 
 
 #intro {
-    margin-top: 12%;
+    padding-top: 12%;
     margin-bottom: 8%;
     height: 100%;
     text-align: center;
@@ -170,8 +170,6 @@ a:hover {
   box-shadow: 0 0 8px rgba(241, 241, 241, 0.6);
 }
 
-
-
 .arrow {
   padding-top: 10px;
   animation-duration: 1.5s;
@@ -181,6 +179,11 @@ a:hover {
 .bounce-1 {
   animation-name: bounce-1;
   animation-timing-function: linear;
+}
+
+#front-arrow {
+  float: right;
+  margin-top: 0;
 }
 @keyframes bounce-1 {
   0%   { transform: translateY(0); }
@@ -348,5 +351,9 @@ li{
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
+}
+
+.bi-arrow-up {
+  color: white;
 }
 
